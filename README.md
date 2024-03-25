@@ -1,1 +1,1 @@
-# project-dr-segmentation-python
+# dr-segmentation-python
