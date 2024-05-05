@@ -16,7 +16,6 @@ from make_dataset import CustomImageDataset
 def get_dataset(args):
     train_dir = args.train_dir
     val_dir = args.val_dir
-    test_dir = args.test_dir
 
     train_img_dir = os.path.join(train_dir, 'Original_Images')
     trian_recon_dir = train_img_dir
@@ -32,8 +31,8 @@ def get_dataset(args):
     val_hard_dir = os.path.join(val_dir, 'Hard_Exudates')
     val_soft_dir = os.path.join(val_dir, 'Soft_Exudates')
 
-    train_dataset = CustomImageDataset(train_img_dir, trian_recon_dir, train_micro_dir, train_hemo_dir, train_hard_dir, train_soft_dir)
-    val_dataset = CustomImageDataset(val_img_dir, val_recon_dir, val_micro_dir, val_hemo_dir, val_hard_dir, val_soft_dir)
+    train_dataset = CustomImageDataset(train_img_dir, trian_recon_dir, train_micro_dir, train_hemo_dir, train_hard_dir, train_soft_dir, transform=ToTensor())
+    val_dataset = CustomImageDataset(val_img_dir, val_recon_dir, val_micro_dir, val_hemo_dir, val_hard_dir, val_soft_dir, transform=ToTensor())
     
     return train_dataset, val_dataset
 
