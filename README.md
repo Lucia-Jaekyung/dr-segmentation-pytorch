@@ -1,5 +1,5 @@
 # dr-segmentation-python
-SSMDDeeplabv3plus-based Segmentation model for detecting diabetic retinopathy using unsupervised learning.
+SSMDDeeplabv3plus-based Segmentation model for detecting diabetic retinopathy using unsupervised learning.  
 **(Semi-Supervised Multi-task Decoders Deeplabv3plus)**
 
 ## Model Description
