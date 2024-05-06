@@ -2,7 +2,7 @@
 SSMDDeeplabv3plus-based Segmentation model for detecting diabetic retinopathy using unsupervised learning.
 **(Semi-Supervised Multi-task Decoders Deeplabv3plus)**
 
-## 모델 설명
+## Model Description
 1. Trained the encoder of Deeplabv3plus using the EypPACS dataset.
 2. One decoder is used for reconstruction using the FGADR dataset, while the other four decoders perform segmentation for Microaneurysms, Hemorrhages, Hard Exudates, and Soft Exudates, respectively.
    
